@@ -39,7 +39,7 @@
   }
 }
 
-h1, h2 {
-  padding: 20px;
-  margin: 15px;
+.Header h1, h2 {
+  padding: 30px;
+  margin: 30px;
 }

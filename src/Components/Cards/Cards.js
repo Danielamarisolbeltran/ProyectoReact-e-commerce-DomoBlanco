@@ -1,41 +1,26 @@
 import './Cards.css'
 import React from "react";
-import { Button, Card, Image, Description } from "semantic-ui-react";
+import { Card, Button, Image } from "semantic-ui-react";
 
-
-const CardExampleGroups = ({ name, img, description }) => {
-  return (
-    <Card.Group>
-      <Card>
-        <Card.Content>
-          <Image
-            floated='right'
-            size='mini'
-            src={img}
-          />
-          <Card.Header>{name}</Card.Header>
-          <Card.Description>
-            {description}
-          </Card.Description>
-        </Card.Content>
-        <Card.Content extra>
-          <div className='ui two buttons'>
-            <Button basic color='green'>
-              Comprar
-            </Button>
-            <Button basic color='red'>
-              Borrar
-            </Button>
+const CardExampleCard = ({ img, name, price, description }) => (
+  <div className="divCards">
+    <Card className="cards">
+      <Image src={img} />
+      <Card.Content>
+        <Card.Header>{name}</Card.Header>
+        <Card.Meta>
+          <span className="date">{price}</span>
+        </Card.Meta>
+        <Card.Description>{description}</Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <div>
+            <Button primary>Agregar</Button>
+            <Button secondary>Borrrar</Button>
           </div>
-        </Card.Content>
-      </Card>
-  
-    </Card.Group>
-  )
-}
+      </Card.Content>
+    </Card>
+  </div>
+);
 
-export default CardExampleGroups;
-
-
-
-
+export default CardExampleCard;

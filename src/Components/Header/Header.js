@@ -3,7 +3,7 @@ import './Header.css'
 import logo from './Logodomoblanco.jpg'
 
 // / creamos props con destructuring ({}) 
-const Header = ({ title, subtitle, img }) => {
+const Header = ({ title, subtitle }) => {
     return (
       <div className="Header">
         <h1>{(title = "Bienvenidos a Domo Blanco Helados")}</h1>

@@ -2,7 +2,13 @@ import React from 'react'
 import './App.css'
 import Header from './Components/Header/Header.js'
 import Navbar from './Components/Navbar/Navbar.js'
-import CardExampleGroups from "./Components/Cards/Cards";
+import CardExampleCard from "./Components/Cards/Cards";
+import Img1 from './Img/capuchino.jpg';
+import Img2 from "./Img/tortabalcarce.jpg";
+import Img3 from "./Img/dulcedeleche.jpg";
+import Img4 from "./Img/frutasalacrema.jpg";
+import Img5 from "./Img/doscucuruchos.jpg";
+
 // import Footer from './Components/Footer/Footer' 
 
 
@@ -11,45 +17,36 @@ const App = () => {
     <div className="App">
       <Navbar />
       <Header />
-      <CardExampleGroups />
-      
-      <div className="divCards">
-        <CardExampleGroups
-          className="cards"
-          name="Producto 1"
-          img="Imagen del producto"
-          price="Precio$"
-          description="Descripcion del producto"
-        />
-        <CardExampleGroups
-          className="cards"
-          name="Producto 2"
-          img="Imagen del producto"
-          price="Precio$"
-          description="Descripcion del producto"
-        />
-        <CardExampleGroups
-          className="cards"
-          name="Producto 3"
-          img="Imagen del producto"
-          price="Precio$"
-          description="Descripcion del producto"
-        />
-        <CardExampleGroups
-          className="cards"
-          name="Producto 4"
-          img="Imagen del producto"
-          price="Precio$"
-          description="Descripcion del producto"
-        />
-        <CardExampleGroups
-          className="cards"
-          name="Producto 5"
-          img="Imagen del producto"
-          price="Precio$"
-          description="Descripcion del producto"
-        />
-      </div>
+      <CardExampleCard
+        img={Img1}
+        name="Cafe/Capuchino"
+        price="$200"
+        description="Descripcion del sabor/producto"
+      />
+      <CardExampleCard
+        img={Img2}
+        name="Porcion de torta"
+        price="$300"
+        description="Descripcion del sabor/producto"
+      />
+      <CardExampleCard
+        img={Img3}
+        name="1/4 Kilo de Helado"
+        price="$450"
+        description="Descripcion del sabor/producto"
+      />
+      <CardExampleCard
+        img={Img4}
+        name="1/2 Kilo de Helado"
+        price="$700"
+        description="Descripcion del sabor/producto"
+      />
+      <CardExampleCard
+        img={Img5}
+        name="1 Kilo de Helado"
+        price="$1300"
+        description="Descripcion del sabor/producto"
+      />
     </div>
   );
 }

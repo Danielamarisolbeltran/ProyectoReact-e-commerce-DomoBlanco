@@ -1,11 +1,14 @@
 .divCards {
+    display: flex;
+    box-sizing: border-box;
+    margin: 40px;
     padding: 20px;
     margin-top:50px;
+    justify-content: center;
+    text-align: center; 
 }
 
-.cards {
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 40px;
-    box-shadow: 2px 2px 3px 4px rgb(3, 145, 137);
+.divCards:hover {
+     box-shadow: 2px 2px 3px 4px rgb(3, 145, 137);
+       
 }
