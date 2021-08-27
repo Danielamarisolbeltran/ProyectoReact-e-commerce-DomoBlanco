@@ -1,0 +1,11 @@
+.divCards {
+    padding: 20px;
+    margin-top:50px;
+}
+
+.cards {
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 40px;
+    box-shadow: 2px 2px 3px 4px rgb(3, 145, 137);
+}
