@@ -12,9 +12,10 @@ import Img5 from './Img/doscucuruchos.jpg';
 import Home from './views/Home/Home';
 import Nosotros from './views/Nosotros/Nosotros';
 import Contacto from './views/Contacto/Contacto';
+import Tienda from "./views/Tienda/Tienda";
 
 // React Router Dom
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // import Footer from './Components/Footer/Footer' 
 
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/nosotros" component={Nosotros} />
           <Route path="/contacto" component={Contacto} />
+          <Route path="/tienda" component={Tienda} />
         </Switch>
 
         <Header />
