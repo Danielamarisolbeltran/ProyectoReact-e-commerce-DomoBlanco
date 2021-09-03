@@ -1,26 +1,46 @@
 import './Cards.css'
 import React from "react";
-import { Card, Button, Image } from "semantic-ui-react";
+import Img1 from "./Img/capuchino.jpg";
+import Img2 from "./Img/tortabalcarce.jpg";
+import Img3 from "./Img/dulcedeleche.jpg";
+import Img4 from "./Img/frutasalacrema.jpg";
+import Img5 from "./Img/doscucuruchos.jpg";
 
-const CardExampleCard = ({ img, name, price, description }) => (
-  <div className="divCards">
-    <Card className="cards">
-      <Image src={img} />
-      <Card.Content>
-        <Card.Header>{name}</Card.Header>
-        <Card.Meta>
-          <span className="date">{price}</span>
-        </Card.Meta>
-        <Card.Description>{description}</Card.Description>
-      </Card.Content>
-      <Card.Content extra>
-        <div>
-            <Button primary>Agregar</Button>
-            <Button secondary>Borrrar</Button>
-          </div>
-      </Card.Content>
-    </Card>
-  </div>
-);
+
+
+const CardExampleCard = () => {
+  <div>
+    <CardExampleCard
+      img={Img1}
+      name="Cafe/Capuchino"
+      price="$200"
+      description="Descripcion del sabor/producto"
+    />
+    <CardExampleCard
+      img={Img2}
+      name="Porcion de torta"
+      price="$300"
+      description="Descripcion del sabor/producto"
+    />
+    <CardExampleCard
+      img={Img3}
+      name="1/4 Kilo de Helado"
+      price="$500"
+      description="Descripcion del sabor/producto"
+    />
+    <CardExampleCard
+      img={Img4}
+      name="1/2 Kilo de Helado"
+      price="$850"
+      description="Descripcion del sabor/producto"
+    />
+    <CardExampleCard
+      img={Img5}
+      name="1 Kilo de Helado"
+      price="$1400"
+      description="Descripcion del sabor/producto"
+    />
+  </div>;
+};
 
 export default CardExampleCard;
