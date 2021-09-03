@@ -9,30 +9,30 @@ import { Button, Image } from "semantic-ui-react"
 const Tienda = ({ img, name, price, description }) => {
     const [items, setItems] = useContext(ItemsContext);
     return (
-        <div className="divCards">
-            <nav style={styles.tienda}>
-                <p style={styles.text}>Items: {items.length}</p>
-            
-            </nav>
-            
-            <h1>Tienda online de pedidos</h1>
-            <Card className="cards">
-                <Image src={img} />
-                <Card.Content>
-                    <Card.Header>{name}</Card.Header>
-                    <Card.Meta>
-                        <span className="date">{price}</span>
-                    </Card.Meta>
-                    <Card.Description>{description}</Card.Description>
-                </Card.Content>
-                <Card.Content extra>
-                    <div>
-                        <Button primary>Agregar</Button>
-                        <Button secondary>Borrrar</Button>
-                    </div>
-                </Card.Content>
-            </Card>
-        </div >
+      <div className="divCards">
+        <nav style={styles.tienda}>
+          <p style={styles.text}>Items: {items.length}</p>
+          <buttton onClick={setItems}>Modificar</buttton>
+        </nav>
+
+        <h1>Tienda online de pedidos</h1>
+        <Card className="cards">
+          <Image src={img} />
+          <Card.Content>
+            <Card.Header>{name}</Card.Header>
+            <Card.Meta>
+              <span className="date">{price}</span>
+            </Card.Meta>
+            <Card.Description>{description}</Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <div>
+              <Button primary>Agregar</Button>
+              <Button secondary>Borrrar</Button>
+            </div>
+          </Card.Content>
+        </Card>
+      </div>
     );
 };
 
