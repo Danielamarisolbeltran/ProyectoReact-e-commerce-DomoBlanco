@@ -1,11 +1,10 @@
 import './Cards.css'
-import React from "react";
-import Img1 from "./Img/capuchino.jpg";
-import Img2 from "./Img/tortabalcarce.jpg";
-import Img3 from "./Img/dulcedeleche.jpg";
-import Img4 from "./Img/frutasalacrema.jpg";
-import Img5 from "./Img/doscucuruchos.jpg";
-
+import React from "react"
+import Img1 from "./img/capuchino.jpg"
+import Img2 from "./img/tortabalcarce.jpg"
+import Img3 from "./img/dulcedeleche.jpg"
+import Img4 from "./img/frutasalacrema.jpg"
+import Img5 from "./img/doscucuruchos.jpg";
 
 
 const CardExampleCard = () => {

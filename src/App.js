@@ -10,39 +10,36 @@ import Contacto from './views/Contacto/Contacto';
 import Tienda from './views/Tienda/Tienda';
 
 
-// React Router Dom
+// React Router Dom (para las view en el nav, SPA)
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-// Context 
+// Import de Context.Provider
 import { ItemsProvider } from './Components/ItemsContext';
 import ItemsList from './Components/ItemsList';
 
+
 const App = () => {
   return (
-    <Router>
-
-      <ItemsProvider>
-
+    <ItemsProvider>
+      <Router>
         <div className="App">
-
           <Navbar />
-
+          <Header />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/nosotros" component={Nosotros} />
             <Route path="/contacto" component={Contacto} />
             <Route path="/tienda" component={Tienda} />
           </Switch>
-          <Header />
-
-          <ItemsList/>
-          
+         
+          <ItemsList/> 
         </div>
-      </ItemsProvider>
-    </Router>
+      </Router>
+    </ItemsProvider> 
   );
 }
-   
+
 export default App;
+
 
 

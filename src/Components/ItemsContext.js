@@ -1,4 +1,4 @@
-import { PROPERTY_TYPES } from "@babel/types";
+// import { PROPERTY_TYPES } from "@babel/types";
 import React, { useState, createContext } from "react";
 
 // Se crea context 
@@ -13,22 +13,20 @@ const initialState = [
   { id: 4, name: "Cucurucho" , price: 400 },
   { id: 5, name: "Pote de 1/4 kg de helado" , price: 500},
   { id: 6, name: "Pote de 1/2 kg de helado", price: 850},
-  { id: 7, name: "Pote de 1 kg de helado", price: 1400 }
+  { id: 7, name: "Pote de 1 kg de helado", price: 1400 },
 ];
 
 // pasamos props dentro del componente provider
-
 export const ItemsProvider = ({ children }) => {
   const [items, setItems] = useState(initialState);
 
   // return de nuestro context con un .provider
   // pasar props.children
   return (
-    <ItemsContext.Provider>
+    <ItemsContext.Provider value={{items, setItems}}>
       {children} 
     </ItemsContext.Provider>
   )
-
 };
     
     
